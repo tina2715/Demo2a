@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@drawable/nen1234"
+    android:gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:background="@drawable/nen_den">
+        <TextView
+            android:fontFamily="@font/dancing"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Thanh toán thủ công"
+            android:textSize="24dp"
+            android:textColor="@color/orange"
+            android:textStyle="bold"/>
+        <RadioGroup
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RadioButton
+                android:textSize="20dp"
+                android:fontFamily="@font/ebgaramond"
+                android:textColor="@color/white"
+                android:id="@+id/rdo_cty"
+                android:checked="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Thanh toán tại công ty"/>
+            <RadioButton
+                android:fontFamily="@font/ebgaramond"
+                android:textSize="20dp"
+                android:textColor="@color/white"
+                android:id="@+id/rdo_ngh"
+                android:layout_marginTop="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Thanh toán tại ngân hàng"/>
+        </RadioGroup>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Xác nhận"
+            android:textColor="@color/white"
+            android:background="@drawable/bogoc_btn_xanh"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:textStyle="bold"
+            android:id="@+id/btn_xacnhan"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:textColor="@color/white"
+            android:text="Hủy"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginBottom="30dp"
+            android:background="@drawable/bogoc_btn_xam"
+            android:textStyle="bold"
+            android:id="@+id/btn_huy"/>
+    </LinearLayout>
+
+</LinearLayout>

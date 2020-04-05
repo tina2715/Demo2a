@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@drawable/nen1234"
+    android:layout_height="match_parent">
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true">
+        <LinearLayout
+            android:background="@drawable/nen_den"
+            android:layout_marginTop="1dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:drawableLeft="@drawable/ic_class_black_24dp"
+                android:drawablePadding="5dp"
+                android:textSize="16dp"
+                android:fontFamily="@font/ebgaramond"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Mã lớp: "
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:textColor="@color/white"
+                android:textStyle="bold"/>
+            <EditText
+                android:padding="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:background="@drawable/et_custom"
+                android:layout_marginTop="5dp"
+                android:hint="Mã lớp"
+                android:id="@+id/edt_malop"/>
+            <TextView
+                android:drawableLeft="@drawable/ic_today_black_24dp"
+                android:drawablePadding="5dp"
+                android:textSize="16dp"
+                android:fontFamily="@font/ebgaramond"
+                android:layout_marginTop="10dp"
+                android:textStyle="bold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Ngày nghỉ:"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:textColor="@color/white"/>
+            <TextView
+                android:id="@+id/tv_ngaynghi"
+                android:padding="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="Ngày nghỉ"
+                android:gravity="center_vertical"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/et_custom"/>
+
+            <TextView
+                android:drawablePadding="5dp"
+                android:drawableLeft="@drawable/ic_library_books_black_24dp"
+                android:fontFamily="@font/ebgaramond"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Lý do nghỉ:"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:textColor="@color/white"
+                android:layout_marginTop="10dp"/>
+            <EditText
+                android:padding="10dp"
+                android:id="@+id/edt_lydonghi"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/et_custom"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:hint="Lý do nghỉ"/>
+            <TextView
+                android:drawableLeft="@drawable/ic_today_black_24dp"
+                android:drawablePadding="5dp"
+                android:fontFamily="@font/ebgaramond"
+                android:textSize="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Ngày bù:"
+                android:textStyle="bold"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:textColor="@color/white"
+                android:layout_marginTop="10dp"/>
+            <TextView
+                android:id="@+id/tv_ngaybu"
+                android:padding="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="Ngày bù"
+                android:gravity="center_vertical"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/et_custom"/>
+            <TextView
+                android:drawablePadding="5dp"
+                android:drawableLeft="@drawable/ic_library_books_black_24dp"
+                android:textSize="16dp"
+                android:fontFamily="@font/ebgaramond"
+                android:textStyle="bold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Ghi chú:"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:textColor="@color/white"
+                android:layout_marginTop="10dp"/>
+            <EditText
+                android:gravity="start"
+                android:id="@+id/edt_ghichulichnghi"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:background="@drawable/et_custom"
+                android:padding="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:hint="Ghi chú"/>
+            <Button
+                android:id="@+id/btn_xacnhan"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="Xác nhận"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/bogoc_btn_xanh"
+                android:textColor="@color/white"
+                android:textStyle="bold"/>
+            <Button
+                android:id="@+id/btn_huy"
+                android:textColor="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="Hủy"
+                android:background="@drawable/bogoc_btn_xam"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="30dp"
+                android:textStyle="bold"/>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_trangchu">
+
+    <fragment
+        android:id="@+id/nav_trangchu"
+        android:name="com.udgs123.demo2a.ui.trangchu.TrangchuFragment"
+        android:label="@string/menu_trangchu"
+        tools:layout="@layout/fragment_trangchu" />
+
+    <fragment
+        android:id="@+id/nav_timgiasu"
+        android:name="com.udgs123.demo2a.ui.timgiasu.TimgiasuFragment"
+        android:label="@string/menu_timgiasu"
+        tools:layout="@layout/fragment_timgiasu" />
+
+    <fragment
+        android:id="@+id/nav_ttlophoc"
+        android:name="com.udgs123.demo2a.ui.ttlophoc.TtlophocFragment"
+        android:label="@string/menu_ttlophoc"
+        tools:layout="@layout/fragment_ttlophoc" />
+
+    <fragment
+        android:id="@+id/nav_tthocvien"
+        android:name="com.udgs123.demo2a.ui.tthocvien.TthocvienFragment"
+        android:label="@string/menu_tthocvien"
+        tools:layout="@layout/fragment_tthocvien" />
+    <fragment
+        android:id="@+id/nav_banghocphi"
+        android:name="com.udgs123.demo2a.ui.banghocphi.BanghocphiFragment"
+        android:label="@string/menu_banghocphi"
+        tools:layout="@layout/fragment_banghocphi"/>
+
+    <fragment
+        android:id="@+id/nav_lichnghi"
+        android:name="com.udgs123.demo2a.ui.lichnghi.LichnghiFragment"
+        android:label="@string/menu_lichnghi"
+        tools:layout="@layout/fragment_lichnghi" />
+
+    <fragment
+        android:id="@+id/nav_thanhtoan"
+        android:name="com.udgs123.demo2a.ui.thanhtoan.ThanhtoanFragment"
+        android:label="@string/menu_thanhtoan"
+        tools:layout="@layout/fragment_thanhtoan" />
+    <fragment android:id="@+id/nav_thoikhoabieu"
+        android:name="com.udgs123.demo2a.ui.thoikhoabieu.ThoikhoabieuFragment"
+        android:label="@string/menu_thoikhoabieu"
+        tools:layout="@layout/fragment_thoikhoabieu"/>
+</navigation>

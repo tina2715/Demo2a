@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="red">#FF0000</color>
+    <color name="red1">#8A0808</color>
+    <color name="xanh">#0A122A</color>
+    <color name="blue">#26a69a</color>
+    <color name="blue_trong">#BA26A69A</color>
+    <color name="green">#8DC61B</color>
+    <color name="den">#111</color>
+    <color name="orange">#F78C00</color>
+    <color name="xamnhat">#ECEAEA</color>
+    <color name="greendam">#0B3B0B</color>
+    <color name="greennhat">#0B610B</color>
+    <color name="brown">#A52A2A</color>
+    <color name="firebrick">#8B1A1A</color>
+    <color name="firebricknhat">#CD2626</color>
+    <color name="grey">#cfcfcf</color>
+    <color name="white">#fff</color>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#ec1c24</color>
+</resources>

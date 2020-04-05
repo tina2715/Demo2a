@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_thanhtoan_trai"
+    android:background="@drawable/nen1234"
+   android:gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true" >
+        <LinearLayout
+            android:background="@drawable/nen_den"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:fontFamily="@font/ebgaramond"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:textColor="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Họ và tên:" />
+            <EditText
+                android:id="@+id/edt_hoten_atm"
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:padding="10dp"
+                android:hint="Họ tên chủ thẻ"
+                android:background="@drawable/et_custom"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp" />
+            <TextView
+                android:fontFamily="@font/ebgaramond"
+                android:textSize="16dp"
+                android:layout_marginTop="10dp"
+                android:textStyle="bold"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:textColor="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Số thẻ:" />
+            <EditText
+                android:id="@+id/edt_sothe_atm"
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:hint="Số thẻ"
+                android:background="@drawable/et_custom"
+                android:padding="10dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp" />
+            <TextView
+                android:fontFamily="@font/ebgaramond"
+                android:textSize="16dp"
+                android:layout_marginTop="10dp"
+                android:textStyle="bold"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:textColor="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Mật khẩu:" />
+            <EditText
+                android:id="@+id/edt_matkhau_atm"
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:hint="Mật khẩu"
+                android:background="@drawable/et_custom"
+                android:padding="10dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                />
+            <CheckBox
+                android:fontFamily="@font/ebgaramond"
+                android:id="@+id/checkboxthanhtoan_id"
+                android:layout_marginTop="20dp"
+                android:textColor="@color/white"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Tôi đồng ý với mọi điều khoản của công ty"/>
+            <Button
+                android:id="@+id/btn_xacnhan_thanhtoan"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:text="Xác nhận"
+                android:background="@drawable/bogoc_btn_xanh"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:layout_marginTop="30dp"/>
+            <Button
+                android:id="@+id/btn_huy_thanhtoan"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:textColor="@color/white"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:text="Hủy"
+                android:background="@drawable/bogoc_btn_xam"
+                android:textStyle="bold"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="40dp"/>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

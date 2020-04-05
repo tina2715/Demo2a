@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_trangchu"
+            android:icon="@drawable/ic_home_black_24dp"
+            android:title="@string/menu_trangchu" />
+        <item
+            android:id="@+id/nav_timgiasu"
+            android:icon="@drawable/ic_import_contacts_black_24dp"
+            android:title="@string/menu_timgiasu" />
+        <item
+            android:id="@+id/nav_ttlophoc"
+            android:icon="@drawable/ic_class_black_24dp"
+            android:title="@string/menu_ttlophoc" />
+        <item
+            android:id="@+id/nav_tthocvien"
+            android:icon="@drawable/ic_person_black_24dp"
+            android:title="@string/menu_tthocvien" />
+        <item
+            android:id="@+id/nav_banghocphi"
+            android:icon="@drawable/ic_attach_money_black_24dp"
+            android:title="@string/menu_banghocphi"/>
+        <item
+            android:id="@+id/nav_lichnghi"
+            android:icon="@drawable/ic_today_black_24dp"
+            android:title="@string/menu_lichnghi" />
+        <item
+            android:id="@+id/nav_thanhtoan"
+            android:icon="@drawable/ic_attach_money_black_24dp"
+            android:title="@string/menu_thanhtoan" />
+        <item
+            android:id="@+id/nav_thoikhoabieu"
+            android:icon="@drawable/ic_today_black_24dp"
+            android:title="@string/menu_thoikhoabieu"/>
+    </group>
+
+</menu>

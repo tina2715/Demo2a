@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/nen1234"
+    android:gravity="center"
+    tools:context=".dangnhap">
+        <LinearLayout
+            android:background="@drawable/nen_den"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginBottom="50dp"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView
+                android:gravity="center"
+                android:text="Đăng nhập"
+                android:fontFamily="@font/dancing"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:textSize="40dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <EditText
+                android:padding="10dp"
+                android:drawableLeft="@drawable/ic_person_black_24dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:drawablePadding="10dp"
+                android:id="@+id/edt_user"
+                android:background="@drawable/et_custom"
+                android:layout_marginTop="20dp"
+                android:hint="Tài khoản"
+                android:layout_width="match_parent"
+                android:layout_height="50dp" />
+            <EditText
+                android:padding="10dp"
+                android:drawableLeft="@drawable/ic_visibility_off_black_24dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:id="@+id/edt_password"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/et_custom"
+                android:hint="Mật khẩu"
+                android:drawablePadding="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:singleLine="true"
+                android:password="true"/>
+
+            <TextView
+                android:drawableLeft="@drawable/ic_vpn_key_black_24dp"
+                android:id="@+id/text_view"
+                android:drawablePadding="5dp"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center_horizontal"
+                android:textSize="18dp"
+                android:textColor="@color/grey"
+                android:text="Đổi mật khẩu"
+                android:fontFamily="@font/ebgaramond"
+                android:textStyle="bold"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"/>
+
+            <Button
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="20dp"
+                android:id="@+id/btnLogin"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:background="@drawable/bogoc_btn_xanh"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="Đăng Nhập" />
+            <Button
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:id="@+id/buttonthoat"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:background="@drawable/btn_custom"
+                android:layout_marginTop="10dp"
+                android:text="Thoát"
+                android:layout_width="match_parent"
+                android:layout_height="50dp" />
+            <ProgressBar
+                android:layout_marginTop="20dp"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:id="@+id/progressBar"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"/>
+        </LinearLayout>
+</RelativeLayout>
