@@ -1,5 +1,6 @@
 <resources>
     <string name="app_name">Ứng Dụng Học Viên</string>
+    <string name="checkbox">com.udgs123.demo2a.checkbox</string>
     <string name="title_activity_man_hinh_dau_tien">ManHinhDauTien</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
@@ -12,26 +13,29 @@
     <string name="tooltip_bangcapsv_truoc">Mặt trước</string>
     <string name="tooltip_bangcapsv_sau">Mặt sau</string>
 
-    <string name="menu_trangchu">Trang chủ</string>
+    <string name="menu_trangchu">Thông tin tài khoản</string>
     <string name="menu_timgiasu">Đăng ký môn học</string>
     <string name="menu_ttlophoc">Thông tin lớp học</string>
-    <string name="menu_tthocvien">Thông tin học viên</string>
+    <string name="menu_dsgiasu">Danh sách gia sư</string>
     <string name="menu_banghocphi">Bảng học phí</string>
     <string name="menu_lichnghi">Lịch nghỉ</string>
     <string name="menu_thanhtoan">Thanh toán</string>
-    <string name="menu_thoikhoabieu">Thời khóa biểu</string>
+    <string name="menu_thongbao">Thông báo</string>
     <string-array name="spin_trinhdogs">
+        <item>--</item>
         <item>Sinh viên</item>
         <item>Đã tốt nghiệp</item>
         <item>Giảng viên</item>
     </string-array>
     <string-array name="spin_monhoc">
+        <item>--</item>
         <item>Toán</item>
         <item>Lý</item>
         <item>Hóa</item>
         <item>Tiếng Anh</item>
     </string-array>
     <string-array name="spin_lophoc">
+        <item>--</item>
         <item>Lớp 1</item>
         <item>Lớp 2</item>
         <item>Lớp 3</item>
@@ -44,5 +48,147 @@
         <item>Lớp 10</item>
         <item>Lớp 11</item>
         <item>Lớp 12</item>
+    </string-array>
+    <string-array name="spin_giohoc">
+        <item>--</item>
+        <item>45 phút</item>
+        <item>45 phút</item>
+        <item>60 phút</item>
+        <item>90 phút</item>
+        <item>2 giờ</item>
+        <item>3 giờ</item>
+    </string-array>
+    <string-array name="spin_sobuoi">
+        <item>1 buổi</item>
+        <item>2 buổi</item>
+        <item>3 buổi</item>
+        <item>4 buổi</item>
+        <item>5 buổi</item>
+    </string-array>
+    <string-array name="spin_thu2">
+        <item>--</item>
+        <item>7 giờ</item>
+        <item>8 giờ</item>
+        <item>9 giờ</item>
+        <item>10 giờ</item>
+        <item>11 giờ</item>
+        <item>12 giờ</item>
+        <item>13 giờ</item>
+        <item>14 giờ</item>
+        <item>15 giờ</item>
+        <item>16 giờ</item>
+        <item>17 giờ</item>
+        <item>18 giờ</item>
+        <item>19 giờ</item>
+        <item>20 giờ</item>
+        <item>21 giờ</item>
+    </string-array>
+    <string-array name="spin_thu3">
+        <item>--</item>
+        <item>7 giờ</item>
+        <item>8 giờ</item>
+        <item>9 giờ</item>
+        <item>10 giờ</item>
+        <item>11 giờ</item>
+        <item>12 giờ</item>
+        <item>13 giờ</item>
+        <item>14 giờ</item>
+        <item>15 giờ</item>
+        <item>16 giờ</item>
+        <item>17 giờ</item>
+        <item>18 giờ</item>
+        <item>19 giờ</item>
+        <item>20 giờ</item>
+        <item>21 giờ</item>
+    </string-array>
+    <string-array name="spin_thu4">
+        <item>--</item>
+        <item>7 giờ</item>
+        <item>8 giờ</item>
+        <item>9 giờ</item>
+        <item>10 giờ</item>
+        <item>11 giờ</item>
+        <item>12 giờ</item>
+        <item>13 giờ</item>
+        <item>14 giờ</item>
+        <item>15 giờ</item>
+        <item>16 giờ</item>
+        <item>17 giờ</item>
+        <item>18 giờ</item>
+        <item>19 giờ</item>
+        <item>20 giờ</item>
+        <item>21 giờ</item>
+    </string-array>
+    <string-array name="spin_thu5">
+        <item>--</item>
+        <item>7 giờ</item>
+        <item>8 giờ</item>
+        <item>9 giờ</item>
+        <item>10 giờ</item>
+        <item>11 giờ</item>
+        <item>12 giờ</item>
+        <item>13 giờ</item>
+        <item>14 giờ</item>
+        <item>15 giờ</item>
+        <item>16 giờ</item>
+        <item>17 giờ</item>
+        <item>18 giờ</item>
+        <item>19 giờ</item>
+        <item>20 giờ</item>
+        <item>21 giờ</item>
+    </string-array>
+    <string-array name="spin_thu6">
+        <item>--</item>
+        <item>7 giờ</item>
+        <item>8 giờ</item>
+        <item>9 giờ</item>
+        <item>10 giờ</item>
+        <item>11 giờ</item>
+        <item>12 giờ</item>
+        <item>13 giờ</item>
+        <item>14 giờ</item>
+        <item>15 giờ</item>
+        <item>16 giờ</item>
+        <item>17 giờ</item>
+        <item>18 giờ</item>
+        <item>19 giờ</item>
+        <item>20 giờ</item>
+        <item>21 giờ</item>
+    </string-array>
+    <string-array name="spin_thu7">
+        <item>--</item>
+        <item>7 giờ</item>
+        <item>8 giờ</item>
+        <item>9 giờ</item>
+        <item>10 giờ</item>
+        <item>11 giờ</item>
+        <item>12 giờ</item>
+        <item>13 giờ</item>
+        <item>14 giờ</item>
+        <item>15 giờ</item>
+        <item>16 giờ</item>
+        <item>17 giờ</item>
+        <item>18 giờ</item>
+        <item>19 giờ</item>
+        <item>20 giờ</item>
+        <item>21 giờ</item>
+    </string-array>
+    <string-array name="spin_chunhat">
+        <item>--</item>
+        <item>7 giờ</item>
+        <item>8 giờ</item>
+        <item>9 giờ</item>
+        <item>10 giờ</item>
+        <item>11 giờ</item>
+        <item>12 giờ</item>
+        <item>13 giờ</item>
+        <item>14 giờ</item>
+        <item>15 giờ</item>
+        <item>16 giờ</item>
+        <item>17 giờ</item>
+        <item>18 giờ</item>
+        <item>19 giờ</item>
+        <item>20 giờ</item>
+        <item>21 giờ</item>
     </string-array>
 </resources>

@@ -8,7 +8,6 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Button;
 import android.widget.DatePicker;
 import android.widget.TextView;
 
@@ -18,7 +17,6 @@ import androidx.fragment.app.Fragment;
 
 import com.udgs123.demo2a.R;
 
-import java.text.DateFormat;
 import java.util.Calendar;
 
 public class Fragment_tao_lichnghi extends Fragment {
@@ -68,7 +66,6 @@ public class Fragment_tao_lichnghi extends Fragment {
                 Log.d("tag", "onDateSet: mm/dd/yyy" + month + "/" + day + "/" + year);
                 String date = month + "/" + day + "/" + year;
                 mHienthiNgaynghi.setText(date);
-
             }
         };
 

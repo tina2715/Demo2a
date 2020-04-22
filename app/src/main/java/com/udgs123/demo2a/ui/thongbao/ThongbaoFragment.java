@@ -1,4 +1,4 @@
-package com.udgs123.demo2a.ui.thoikhoabieu;
+package com.udgs123.demo2a.ui.thongbao;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -11,13 +11,13 @@ import androidx.fragment.app.Fragment;
 
 import com.udgs123.demo2a.R;
 
-public class ThoikhoabieuFragment extends Fragment {
+public class ThongbaoFragment extends Fragment {
     View v;
 
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        v = inflater.inflate(R.layout.fragment_thoikhoabieu,container,false);
+        v = inflater.inflate(R.layout.fragment_thongbao,container,false);
         return v;
     }
 }

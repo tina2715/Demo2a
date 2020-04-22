@@ -1,56 +1,123 @@
 package com.udgs123.demo2a.ui.trangchu;
 
+import android.app.AlertDialog;
+import android.content.DialogInterface;
+import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.preference.PreferenceManager;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.TextView;
+import android.widget.Toast;
 
-import androidx.annotation.Nullable;
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
-import androidx.recyclerview.widget.LinearLayoutManager;
-import androidx.recyclerview.widget.RecyclerView;
 
+import com.udgs123.demo2a.ConnectHelper;
+import com.udgs123.demo2a.LoadingDialog;
 import com.udgs123.demo2a.R;
+import com.udgs123.demo2a.Tttk_Update;
+import com.udgs123.demo2a.dangnhap;
 
-import java.util.ArrayList;
-import java.util.List;
+import java.sql.Connection;
+import java.sql.ResultSet;
+import java.sql.Statement;
 
 public class TrangchuFragment extends Fragment {
-    private String ten_ttgiasu;
-
     View v;
-    private RecyclerView myrecyclerview;
-    private List<Trangchu> lstTtgisu;
-
+    private TextView mDisplayDate;
+    private TextView tv_tentaikhoan, tv_matkhau, tv_hotenhv, tv_emailhv, tv_sdthv, tv_diachihv, tv_dangxuat, tv_capnhatthongtin;
+    Connection connect;
+    int REQUEST_CODE_UPDATE = 1997;
     public TrangchuFragment () {
     }
 
-
-    public View onCreateView(@NonNull LayoutInflater inflater,
+    public View onCreateView(@NonNull final LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
         v =inflater.inflate(R.layout.fragment_trangchu,container,false);
-        myrecyclerview = (RecyclerView) v.findViewById(R.id.ttgiasu_trangchu_recyclerview);
-        RecyclerViewAdapter recyclerViewAdapter = new RecyclerViewAdapter(getContext(),lstTtgisu);
-        myrecyclerview.setLayoutManager(new LinearLayoutManager(getActivity()));
-        myrecyclerview.setAdapter(recyclerViewAdapter);
+
+        tv_tentaikhoan = (TextView) v.findViewById(R.id.tv_tentaikhoan);
+        tv_matkhau = (TextView) v.findViewById(R.id.tv_matkhau);
+        tv_hotenhv = (TextView) v.findViewById(R.id.tv_hotenhv);
+        tv_emailhv = (TextView) v.findViewById(R.id.tv_emailhv);
+        tv_sdthv = (TextView) v.findViewById(R.id.tv_sdthv);
+        tv_diachihv = (TextView) v.findViewById(R.id.tv_diachihv);
+        tv_dangxuat = (TextView) v.findViewById( R.id.tv_dangxuat );
+        tv_capnhatthongtin = (TextView) v.findViewById( R.id.tv_capnhattaikhoan );
+        try {
+            ConnectHelper connectHelper = new ConnectHelper();
+            connect = connectHelper.connections();
+            if (connect==null) {
+                Toast.makeText(getActivity(),"Kiểm tra kết nối", Toast.LENGTH_SHORT).show();
+            }
+            else {
+                SharedPreferences mPreferences = PreferenceManager.getDefaultSharedPreferences(getActivity());
+                SharedPreferences.Editor editor = mPreferences.edit();
+
+                String tentaikhoan = mPreferences.getString( "Tentaikhoanhv","" );
+
+                String query = "select * from thongtinhocvien where Tentaikhoanhv = '"+tentaikhoan+"'";
+                Statement st = connect.createStatement();
+                ResultSet rs = st.executeQuery(query);
+                if(rs.next()){
+                    tv_tentaikhoan.setText(rs.getString("Tentaikhoanhv"));
+                    tv_matkhau.setText(rs.getString("Matkhauhv"));
+                    tv_hotenhv.setText(rs.getString("Hotenhv"));
+                    tv_emailhv.setText(rs.getString("Emailhv"));
+                    tv_sdthv.setText(rs.getString("Sdthv"));
+                    tv_diachihv.setText(rs.getString("Diachihv"));
+                }
+            }
+        } catch (Exception ex) {
+            Toast.makeText(getActivity(),ex.getMessage(), Toast.LENGTH_LONG).show();
+        }
+
+        tv_dangxuat.setOnClickListener( new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                showAlertDialog();
+            }
+        } );
+        tv_capnhatthongtin.setOnClickListener( new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                LoadingDialog loadingDialog= new LoadingDialog();
+                loadingDialog.loading(getActivity());
+                Intent intent = new Intent(getActivity(),Tttk_Update.class);
+                intent.putExtra("Hotenhv",tv_hotenhv.getText().toString());
+                intent.putExtra("Emailhv",tv_emailhv.getText().toString());
+                startActivityForResult(intent,REQUEST_CODE_UPDATE);
+            }
+        } );
         return v;
     }
 
-
-    @Override
-    public void onCreate(@Nullable Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        lstTtgisu=new ArrayList<>();
-        lstTtgisu.add(new Trangchu("Jayden Long", "6/5/1984", "6251 Eason Rd", " jayden.long@example.com", "(885)-407-3637","Môn 1",R.drawable.avt1));
-        lstTtgisu.add(new Trangchu("Gabe Hart", "8/5/1958", "6041 Samaritan Dr","gabe.hart@example.com","(431)-178-0398", "Môn 2",R.drawable.avt2));
-        lstTtgisu.add(new Trangchu("Kitty Robertson", "7/2/1980", "2126 Nowlin Rd", "kitty.robertson@example.com","(075)-603-4594","Môn 3",R.drawable.avt3));
-        lstTtgisu.add(new Trangchu("Serenity Fleming", "10/4/1951", "7843 Hickory Creek Dr", "serenity.fleming@example.com","(668)-980-8202","Môn 4",R.drawable.avt4));
-        lstTtgisu.add(new Trangchu("Oscar Willis", "6/2/1953", "6722 Royal Ln", "oscar.willis@example.com","(602)-675-6951","Môn 5",R.drawable.avt5));
-        lstTtgisu.add(new Trangchu("Kevin Knight", "9/7/1994", "1881 Mcclellan Rd","knight-kevin.knight@example.com","(368)-773-3391", "Môn 6",R.drawable.avt6));
-        lstTtgisu.add(new Trangchu("Dwight Byrd", "5/6/1982", "7663 Photinia Ave", "dwight.byrd@example.com","(363)-338-6793","Môn 7",R.drawable.avt7));
-        lstTtgisu.add(new Trangchu("Bertha Williamson", "7/1/1995", "6136 Samaritan Dr", "bertha.williamson@example.com","(929)-519-2474","Môn 8",R.drawable.avt8));
-        lstTtgisu.add(new Trangchu("Tim Griffin", "8/1/1995", "8675 Wheeler Ridge Dr", "tim.griffin@example.com", "(857)-662-6052", "Môn 9",R.drawable.avt9));
-        lstTtgisu.add(new Trangchu("Ray Myers", "10/4/1971", "9510 Central St", "ray.myers@example.com", "(384)-529-7659", "Môn 10",R.drawable.avt10));
+    public void showAlertDialog() {
+        AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
+        builder.setTitle("Xác nhận");
+        builder.setMessage("Bạn có muốn đăng xuất tài khoản?");
+        builder.setCancelable(false);
+        builder.setNegativeButton("OK", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialogInterface, int i) {
+                dialogInterface.dismiss();
+                Intent intent = new Intent(getActivity(), dangnhap.class);
+               // CheckLogined.SharedPrefesSAVE(getApplicationContext(),"");
+               // FirebaseAuth.getInstance().signOut();
+                intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK);
+                intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK);
+                startActivity(intent);
+            }
+        });
+        builder.setPositiveButton("Hủy", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialogInterface, int i) {
+                dialogInterface.dismiss();
+            }
+        });
+        AlertDialog alertDialog = builder.create();
+        alertDialog.show();
     }
 }

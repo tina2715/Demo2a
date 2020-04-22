@@ -15,25 +15,19 @@ import java.sql.PreparedStatement;
 import java.sql.SQLException;
 
 public class dangky_hocvien extends AppCompatActivity {
-
-    private Button buttondongy1;
-    private Button buttonhuy1;
-
-    Connection connect;
+//    private Button buttondongy1;
+//    private Button buttonhuy1;
+      Connection connect;
 
 //    private TextView mDisplayDate;
 //
 //    private DatePickerDialog.OnDateSetListener mDateSetListener;
-
 //    TextView selection;
-
-
 
     @Override
     protected void onCreate(Bundle icicle) {
         super.onCreate(icicle);
         setContentView(R.layout.activity_dangky_hocvien);
-
 //        mDisplayDate = (TextView) findViewById(R.id.tvDate);
 //        mDisplayDate.setOnClickListener(new View.OnClickListener() {
 //            @Override
@@ -73,18 +67,20 @@ public class dangky_hocvien extends AppCompatActivity {
                 final EditText sdt = findViewById(R.id.edt_sdthv);
                 final EditText diachi = findViewById(R.id.edt_diachihv);
                 final ProgressBar progressBar = (ProgressBar) findViewById(R.id.progressBar);
-                if (tentaikhoan.getText().toString().trim().equals("")||matkhau.getText().toString().trim().equals("")||hoten.getText().toString().trim().equals("")) {
+                if (tentaikhoan.getText().toString().trim().equals("")
+                        ||matkhau.getText().toString().trim().equals("")
+                        ||hoten.getText().toString().trim().equals("")) {
                     Toast.makeText(dangky_hocvien.this, "Hãy nhập đầy đủ thông tin! ", Toast.LENGTH_SHORT).show();
                 } else {
                     try {
                         ConnectHelper connectionHelper= new ConnectHelper();
                         connect=connectionHelper.connections();
-                        if ( connect == null ) {
-                            Toast.makeText(dangky_hocvien.this, "Kiểm tra kết nối của bạn! ", Toast.LENGTH_SHORT).show();
+                        if (connect==null) {
+                            Toast.makeText(dangky_hocvien.this,"Kiểm tra kết nối của bạn! ",Toast.LENGTH_SHORT).show();
                         }
                         else {
                             try {
-                                PreparedStatement pst = connect.prepareStatement("insert into taikhoan_hv values(?,?,?,?,?,?)");
+                                PreparedStatement pst = connect.prepareStatement("insert into thongtinhocvien values(?,?,?,?,?,?)");
                                 pst.setString(1, tentaikhoan.getText().toString().trim());
                                 pst.setString(2, matkhau.getText().toString().trim());
                                 pst.setString(3, hoten.getText().toString().trim());
@@ -107,14 +103,14 @@ public class dangky_hocvien extends AppCompatActivity {
                 }
             }
         });
-        buttonhuy1 = (Button) findViewById(R.id.buttonhuy);
-        buttonhuy1.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(dangky_hocvien.this, MainActivity.class);
-                startActivity(intent);
-            }
-        });
+//        buttonhuy1 = (Button) findViewById(R.id.buttonhuy);
+//        buttonhuy1.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                Intent intent = new Intent(dangky_hocvien.this, MainActivity.class);
+//                startActivity(intent);
+//            }
+//        });
     }
 //    public class dangKy extends Async Task<String, String, Boolean> {
 //        private ProgressDialog progressDialog;
@@ -125,5 +121,4 @@ public class dangky_hocvien extends AppCompatActivity {
 //        }
 //
 //    }
-
 }

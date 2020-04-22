@@ -1,115 +1,165 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:background="@drawable/bogoc_khungnhin1"
-    android:layout_gravity="center">
-    <LinearLayout
-        android:layout_marginTop="50dp"
+    android:background="@color/white"
+    android:layout_height="match_parent">
+    <ScrollView
+        android:layout_alignParentTop="true"
         android:layout_width="match_parent"
-        android:layout_height="300dp"
-        android:orientation="vertical"
-        android:background="@color/white"
-        android:gravity="start">
-            <TextView
-                android:fontFamily="@font/dancing"
-                android:layout_marginTop="80dp"
-                android:layout_gravity="center"
-                android:id="@+id/dialog_ten_id"
-                android:textColor="@color/orange"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Tên gia sư"
-                android:textStyle="bold"
-                android:textSize="24sp"/>
+        android:layout_height="match_parent"
+        >
         <LinearLayout
-            android:layout_marginTop="10dp"
+            android:layout_gravity="center"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:gravity="center">
-            <TextView
-                android:drawableLeft="@drawable/ic_home_black_24dp"
-                android:layout_width="30dp"
-                android:layout_height="wrap_content"/>
-            <TextView
-                android:id="@+id/dialog_diachi_id"
-                android:layout_width="wrap_content"
-                android:textStyle="bold"
-                android:fontFamily="@font/ebgaramond"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Địa chỉ"
-                android:textSize="18sp"/>
+                android:orientation="vertical">
+                <ImageView
+                    android:layout_marginTop="10dp"
+                    android:layout_gravity="center"
+                    android:layout_width="100dp"
+                    android:layout_height="75dp"
+                    app:srcCompat="@drawable/ic_person_black_24dp"
+                    android:id="@+id/img_gs"/>
+
+                <LinearLayout
+                    android:weightSum="9"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_weight="6"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="Thông tin gia sư:"
+                        android:textSize="16sp"
+                        android:textColor="@color/den"/>
+                    <TextView
+                        android:layout_weight="3"
+                        android:id="@+id/id_gs"
+                        android:textColor="@color/blue"
+                        android:gravity="center"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:text="Mã GS"/>
+                </LinearLayout>
+                <TextView
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@drawable/et_custom"
+                    android:text="Họ tên gia sư"
+                    android:drawableLeft="@drawable/ic_person_black_24dp"
+                    android:padding="10dp"
+                    android:drawablePadding="5dp"
+                    android:id="@+id/tv_hotengs"
+                    android:gravity="center_vertical"/>
+
+                <TextView
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@drawable/et_custom"
+                    android:text="Email gia sư"
+                    android:drawableLeft="@drawable/ic_email_black_24dp"
+                    android:padding="10dp"
+                    android:drawablePadding="5dp"
+                    android:id="@+id/tv_emailgs"
+                    android:gravity="center_vertical"/>
+                <TextView
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@drawable/et_custom"
+                    android:text="Số điện thoại"
+                    android:drawableLeft="@drawable/ic_phone_black_24dp"
+                    android:padding="10dp"
+                    android:drawablePadding="5dp"
+                    android:id="@+id/tv_sdtgs"
+                    android:gravity="center_vertical"/>
+                <TextView
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@drawable/et_custom"
+                    android:text="Địa chỉ"
+                    android:drawableLeft="@drawable/ic_home_black_24dp"
+                    android:padding="10dp"
+                    android:drawablePadding="5dp"
+                    android:id="@+id/tv_diachigs"
+                    android:gravity="center_vertical"/>
+                <TextView
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@drawable/et_custom"
+                    android:text="Trường theo học"
+                    android:drawableLeft="@drawable/ic_place_black_24dp"
+                    android:padding="10dp"
+                    android:drawablePadding="5dp"
+                    android:id="@+id/tv_truongtheohocgs"
+                    android:gravity="center_vertical"/>
+                <TextView
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@drawable/et_custom"
+                    android:text="Chuyên ngành"
+                    android:drawableLeft="@drawable/ic_import_contacts_black_24dp"
+                    android:padding="10dp"
+                    android:drawablePadding="5dp"
+                    android:id="@+id/tv_chuyennganhgs"
+                    android:gravity="center_vertical"/>
+                <TextView
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@drawable/et_custom"
+                    android:text="Môn dạy"
+                    android:drawableLeft="@drawable/ic_library_books_black_24dp"
+                    android:padding="10dp"
+                    android:drawablePadding="5dp"
+                    android:id="@+id/tv_mondaygs"
+                    android:gravity="center_vertical"/>
+                <TextView
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@drawable/et_custom"
+                    android:text="Trình độ"
+                    android:drawableLeft="@drawable/ic_school_black_24dp"
+                    android:padding="10dp"
+                    android:drawablePadding="5dp"
+                    android:id="@+id/tv_trinhdogs"
+                    android:gravity="center_vertical"/>
+
+            </LinearLayout>
         </LinearLayout>
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:layout_marginTop="10dp"
-            android:gravity="center">
-            <TextView
-                android:drawableLeft="@drawable/ic_email_black_24dp"
-                android:layout_width="30dp"
-                android:layout_height="wrap_content"/>
-            <TextView
-                android:id="@+id/dialog_email_id"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/ebgaramond"
-                android:textStyle="bold"
-                android:text="Email"
-                android:textSize="18sp"/>
-        </LinearLayout>
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:layout_marginTop="10dp"
-            android:gravity="center">
-            <TextView
-                android:drawableLeft="@drawable/ic_call"
-                android:layout_width="30dp"
-                android:layout_height="wrap_content"/>
-            <TextView
-                android:id="@+id/dialog_sdt_id"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/ebgaramond"
-                android:textStyle="bold"
-                android:text="Số điện thoại"
-                android:textSize="18sp"/>
-        </LinearLayout>
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:layout_marginTop="10dp"
-            android:layout_marginBottom="20dp"
-            android:gravity="center">
-            <TextView
-                android:drawableLeft="@drawable/ic_library_books_black_24dp"
-                android:layout_width="30dp"
-                android:layout_height="wrap_content"/>
-            <TextView
-                android:fontFamily="@font/ebgaramond"
-                android:id="@+id/dialog_daymon_id"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textColor="@color/blue"
-                android:textStyle="bold"
-                android:text="Dạy môn"
-                android:textSize="20sp"/>
-        </LinearLayout>
-    </LinearLayout>
-    <ImageView
-        android:layout_marginTop="30dp"
-        android:background="@drawable/bogoc_khungnhin"
-        android:id="@+id/dialog_img"
-        android:padding="10dp"
-        android:layout_width="120dp"
-        android:layout_height="100dp"
-        android:src="@drawable/logo3"
-        android:layout_centerHorizontal="true"
-        android:layout_alignParentTop="true"/>
+    </ScrollView>
+
 
 </RelativeLayout>

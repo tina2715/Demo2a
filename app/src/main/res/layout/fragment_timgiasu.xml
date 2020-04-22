@@ -20,7 +20,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Lớp học"
+                android:text="Tên lớp"
                 android:textSize="16dp"
                 android:fontFamily="@font/ebgaramond"
                 android:textStyle="bold"
@@ -28,23 +28,32 @@
                 android:layout_marginRight="30dp"
                 android:textColor="@color/white"
                 android:layout_marginTop="5dp"/>
-        <LinearLayout
-            android:layout_marginLeft="30dp"
-            android:layout_marginRight="30dp"
-            android:layout_marginTop="5dp"
-            android:layout_width="match_parent"
-            android:layout_height="40dp"
-            android:orientation="vertical"
-            android:background="@drawable/et_custom">
-            <Spinner
-                android:padding="10dp"
-                android:gravity="left"
-                android:layout_alignParentTop="true"
-                android:layout_centerHorizontal="true"
-                android:id="@+id/spin_lophoc"
+            <EditText
+                android:padding="5dp"
+                android:id="@+id/edt_tenlop"
                 android:layout_width="match_parent"
-                android:layout_height="40dp"/>
-        </LinearLayout>
+                android:layout_height="50dp"
+                android:background="@drawable/et_custom"
+                android:hint=""
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"/>
+<!--        <LinearLayout-->
+<!--            android:layout_marginLeft="30dp"-->
+<!--            android:layout_marginRight="30dp"-->
+<!--            android:layout_marginTop="5dp"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="40dp"-->
+<!--            android:orientation="vertical"-->
+<!--            android:background="@drawable/et_custom">-->
+<!--            <Spinner-->
+<!--                android:padding="10dp"-->
+<!--                android:gravity="left"-->
+<!--                android:layout_alignParentTop="true"-->
+<!--                android:layout_centerHorizontal="true"-->
+<!--                android:id="@+id/spin_lophoc"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="40dp"/>-->
+<!--        </LinearLayout>-->
             <TextView
                 android:fontFamily="@font/ebgaramond"
                 android:layout_marginLeft="30dp"
@@ -52,184 +61,117 @@
                 android:layout_marginTop="10dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Môn học:"
+                android:text="Tên môn:"
                 android:textColor="@color/white"
                 android:textSize="16dp"
                 android:textStyle="bold"/>
-        <LinearLayout
-            android:layout_marginLeft="30dp"
-            android:layout_marginRight="30dp"
-            android:layout_marginTop="5dp"
-            android:layout_width="match_parent"
-            android:layout_height="40dp"
-            android:orientation="vertical"
-            android:background="@drawable/et_custom">
-            <Spinner
-                android:padding="10dp"
-                android:gravity="left"
-                android:layout_alignParentTop="true"
-                android:layout_centerHorizontal="true"
-                android:id="@+id/spin_monhoc"
+            <EditText
+                android:padding="5dp"
+                android:id="@+id/edt_tenmon"
                 android:layout_width="match_parent"
-                android:layout_height="40dp"/>
-        </LinearLayout>
-            <TextView
-                android:fontFamily="@font/ebgaramond"
+                android:layout_height="50dp"
+                android:background="@drawable/et_custom"
+                android:hint=""
                 android:layout_marginLeft="30dp"
-                android:layout_marginRight="30dp"
-                android:layout_marginTop="10dp"
-                android:textColor="@color/white"
-                android:textStyle="bold"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Trình độ gia sư:"
-                android:textSize="16dp"/>
-        <LinearLayout
-            android:layout_marginLeft="30dp"
-            android:layout_marginRight="30dp"
-            android:layout_marginTop="5dp"
-            android:layout_width="match_parent"
-            android:layout_height="40dp"
-            android:orientation="vertical"
-            android:background="@drawable/et_custom">
-            <Spinner
-                android:padding="10dp"
-                android:gravity="left"
-                android:layout_alignParentTop="true"
-                android:layout_centerHorizontal="true"
-                android:id="@+id/spin_trinhdo"
-                android:layout_width="match_parent"
-                android:layout_height="40dp" />
-        </LinearLayout>
+                android:layout_marginRight="30dp"/>
+
             <TextView
                 android:fontFamily="@font/ebgaramond"
                 android:layout_marginLeft="30dp"
                 android:layout_marginRight="30dp"
                 android:textColor="@color/white"
                 android:layout_marginTop="10dp"
-                android:text="Thời gian học:"
+                android:text="Ngày bắt đầu:"
                 android:textSize="16dp"
                 android:textStyle="bold"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"/>
-            <LinearLayout
-                android:layout_marginTop="5dp"
+            <EditText
+                android:id="@+id/edt_ngaybatdau"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/et_custom"
                 android:layout_marginLeft="30dp"
                 android:layout_marginRight="30dp"
-                android:layout_width="230dp"
+                android:padding="5dp"/>
+            <TextView
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal">
-                <TextView
-                    android:fontFamily="@font/ebgaramond"
-                    android:textColor="@color/white"
-                    android:layout_width="40dp"
-                    android:layout_height="wrap_content"
-                    android:text="Từ:"
-                    android:textStyle="bold"/>
-                <EditText
-                    android:layout_width="180dp"
-                    android:layout_height="50dp"
-                    android:gravity="center"
-                    android:hint="17h"
-                    android:background="@drawable/et_custom"/>
-            </LinearLayout>
-            <LinearLayout
-                android:layout_marginTop="5dp"
+                android:text="Số lượng giờ học:"
                 android:layout_marginLeft="30dp"
                 android:layout_marginRight="30dp"
-                android:layout_width="230dp"
-                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/white"
+                android:textSize="16sp"/>
+            <EditText
+                android:padding="5dp"
+                android:id="@+id/edt_soluonggiohoc"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/et_custom"
+                android:hint=""
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="10dp"
                 android:orientation="horizontal">
+
                 <TextView
+                    android:layout_width="150dp"
+                    android:layout_height="61dp"
+                    android:gravity="center_vertical"
+                    android:text="Số buổi trong tuần:"
                     android:textColor="@color/white"
-                    android:layout_width="40dp"
-                    android:layout_height="wrap_content"
-                    android:text="Đến:"
-                    android:fontFamily="@font/ebgaramond"
-                    android:textStyle="bold"/>
+                    android:textSize="16sp" />
                 <EditText
-                    android:gravity="center"
-                    android:layout_width="180dp"
+                    android:padding="5dp"
+                    android:id="@+id/edt_soluongbuoihoc"
+                    android:layout_width="match_parent"
                     android:layout_height="50dp"
                     android:background="@drawable/et_custom"
-                    android:hint="19h"/>
+                    android:hint=""/>
             </LinearLayout>
-            <LinearLayout
-                android:layout_marginLeft="30dp"
-                android:layout_marginRight="30dp"
-                android:layout_width="230dp"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:layout_marginTop="10dp">
-                <RadioButton
-                    android:textSize="16dp"
-                    android:fontFamily="@font/ebgaramond"
-                    android:textColor="@color/white"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Thứ hai"
-                    android:checked="true"/>
-                <RadioButton
-                    android:textSize="16dp"
-                    android:fontFamily="@font/ebgaramond"
-                    android:textColor="@color/white"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Thứ ba"/>
-            </LinearLayout>
-            <LinearLayout
-                android:layout_marginLeft="30dp"
-                android:layout_marginRight="30dp"
-                android:layout_width="230dp"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:layout_marginTop="10dp">
-                <RadioButton
-                    android:textSize="16dp"
-                    android:fontFamily="@font/ebgaramond"
-                    android:textColor="@color/white"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Thứ tư"
-                    android:checked="true"/>
 
-                <RadioButton
-                    android:textSize="16dp"
-                    android:fontFamily="@font/ebgaramond"
-                    android:textColor="@color/white"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Thứ năm"/>
-            </LinearLayout>
-            <LinearLayout
-                android:layout_width="230dp"
+            <TextView
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:layout_marginLeft="30dp"
-                android:layout_marginRight="30dp">
-                <RadioButton
-                    android:textSize="16dp"
-                    android:fontFamily="@font/ebgaramond"
-                    android:textColor="@color/white"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Thứ sáu"
-                    android:checked="true"/>
-                <RadioButton
-                    android:textSize="16dp"
-                    android:fontFamily="@font/ebgaramond"
-                    android:textColor="@color/white"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Thứ bảy"/>
-            </LinearLayout>
-            <RadioButton
-                android:textSize="16dp"
-                android:fontFamily="@font/ebgaramond"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Chủ nhật"
+                android:text="Ngày học:"
+                android:textSize="16sp"
                 android:textColor="@color/white"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="10dp"/>
+            <EditText
+                android:padding="5dp"
+                android:id="@+id/edt_ngayhoc"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/et_custom"
+                android:hint=""
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"/>
+            <TextView
+                android:fontFamily="@font/ebgaramond"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Giờ học:"
+                android:textSize="16dp"/>
+            <EditText
+                android:padding="5dp"
+                android:id="@+id/edt_giohoc"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/et_custom"
+                android:hint=""
                 android:layout_marginLeft="30dp"
                 android:layout_marginRight="30dp"/>
             <TextView
@@ -265,18 +207,6 @@
                 android:background="@drawable/bogoc_btn_xanh"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"/>
-            <Button
-                android:id="@+id/btn_huy"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Hủy"
-                android:textStyle="bold"
-                android:background="@drawable/bogoc_btn_xam"
-                android:layout_marginTop="10dp"
-                android:textColor="@color/white"
-                android:layout_marginLeft="30dp"
-                android:layout_marginRight="30dp"
-                android:layout_marginBottom="30dp"/>
         </LinearLayout>
     </ScrollView>
     <TextView
@@ -290,5 +220,6 @@
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        android:gravity="center_horizontal" />
 </RelativeLayout>

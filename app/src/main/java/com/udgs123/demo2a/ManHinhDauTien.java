@@ -1,25 +1,20 @@
 package com.udgs123.demo2a;
 
 import android.os.Bundle;
-
-import com.google.android.material.floatingactionbutton.FloatingActionButton;
-import com.google.android.material.snackbar.Snackbar;
-
+import android.view.Menu;
 import android.view.View;
 
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
+import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
 import androidx.navigation.ui.AppBarConfiguration;
 import androidx.navigation.ui.NavigationUI;
 
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.navigation.NavigationView;
-
-import androidx.drawerlayout.widget.DrawerLayout;
-
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.appcompat.widget.Toolbar;
-
-import android.view.Menu;
+import com.google.android.material.snackbar.Snackbar;
 
 public class ManHinhDauTien extends AppCompatActivity {
 
@@ -45,7 +40,7 @@ public class ManHinhDauTien extends AppCompatActivity {
         // menu should be considered as top level destinations.
         mAppBarConfiguration = new AppBarConfiguration.Builder(
                 R.id.nav_trangchu, R.id.nav_timgiasu, R.id.nav_ttlophoc,
-                R.id.nav_tthocvien,R.id.nav_banghocphi, R.id.nav_lichnghi, R.id.nav_thanhtoan, R.id.nav_thoikhoabieu)
+                R.id.nav_dsgiasu,R.id.nav_banghocphi, R.id.nav_lichnghi, R.id.nav_thanhtoan, R.id.nav_thongbao)
                 .setDrawerLayout(drawer)
                 .build();
         NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment);

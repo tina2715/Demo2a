@@ -17,9 +17,9 @@
             android:icon="@drawable/ic_class_black_24dp"
             android:title="@string/menu_ttlophoc" />
         <item
-            android:id="@+id/nav_tthocvien"
+            android:id="@+id/nav_dsgiasu"
             android:icon="@drawable/ic_person_black_24dp"
-            android:title="@string/menu_tthocvien" />
+            android:title="@string/menu_dsgiasu" />
         <item
             android:id="@+id/nav_banghocphi"
             android:icon="@drawable/ic_attach_money_black_24dp"
@@ -33,9 +33,9 @@
             android:icon="@drawable/ic_attach_money_black_24dp"
             android:title="@string/menu_thanhtoan" />
         <item
-            android:id="@+id/nav_thoikhoabieu"
-            android:icon="@drawable/ic_today_black_24dp"
-            android:title="@string/menu_thoikhoabieu"/>
+            android:id="@+id/nav_thongbao"
+            android:icon="@drawable/ic_notifications_black_24dp"
+            android:title="@string/menu_thongbao"/>
     </group>
 
 </menu>

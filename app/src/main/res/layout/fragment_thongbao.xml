@@ -5,11 +5,10 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:gravity="center">
-    <CalendarView
-        android:background="@drawable/nen_sang"
-        android:id="@+id/thoikhoabieu"
+    <androidx.recyclerview.widget.RecyclerView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="5dp"/>
+        android:layout_height="match_parent"
+        android:id="@+id/thongbao_recyclerview">
+    </androidx.recyclerview.widget.RecyclerView>
 
 </LinearLayout>
