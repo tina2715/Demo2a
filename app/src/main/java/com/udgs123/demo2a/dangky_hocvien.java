@@ -28,33 +28,6 @@ public class dangky_hocvien extends AppCompatActivity {
     protected void onCreate(Bundle icicle) {
         super.onCreate(icicle);
         setContentView(R.layout.activity_dangky_hocvien);
-//        mDisplayDate = (TextView) findViewById(R.id.tvDate);
-//        mDisplayDate.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                Calendar cal = Calendar.getInstance();
-//                int year = cal.get(Calendar.YEAR);
-//                int month = cal.get(Calendar.MONTH);
-//                int day = cal.get(Calendar.DAY_OF_MONTH);
-//
-//                DatePickerDialog dialog = new DatePickerDialog(dangky_hocvien.this,
-//                        android.R.style.Theme_Holo_Light_Dialog_MinWidth,
-//                        mDateSetListener,
-//                        year, month, day);
-//                dialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
-//                dialog.show();
-//            }
-//        });
-//        mDateSetListener = new DatePickerDialog.OnDateSetListener() {
-//            @Override
-//            public void onDateSet(DatePicker datePicker, int year, int month, int day) {
-//                month = month +1;
-//                Log.d("Tag","onDateSet: mm/dd/yyy:" + month + " / " + day + " / " + year);
-//                String date = month + "/" + day + "/" + year;
-//                mDisplayDate.setText(date);
-//            }
-//        };
-
 
         final Button buttondongy1 = findViewById(R.id.buttondongy);
         buttondongy1.setOnClickListener(new View.OnClickListener() {
@@ -80,12 +53,12 @@ public class dangky_hocvien extends AppCompatActivity {
                         }
                         else {
                             try {
-                                PreparedStatement pst = connect.prepareStatement("insert into thongtinhocvien values(?,?,?,?,?,?)");
+                                PreparedStatement pst = connect.prepareStatement("insert into tthv values(?,?,?,?,?,?)");
                                 pst.setString(1, tentaikhoan.getText().toString().trim());
                                 pst.setString(2, matkhau.getText().toString().trim());
                                 pst.setString(3, hoten.getText().toString().trim());
-                                pst.setString(4, sdt.getText().toString().trim());
-                                pst.setString(5, email.getText().toString().trim());
+                                pst.setString(4, email.getText().toString().trim());
+                                pst.setString(5, sdt.getText().toString().trim());
                                 pst.setString(6, diachi.getText().toString().trim());
                                 pst.executeUpdate();
                                 Toast.makeText(getApplicationContext(),"Đăng ký thành công", Toast.LENGTH_SHORT).show();

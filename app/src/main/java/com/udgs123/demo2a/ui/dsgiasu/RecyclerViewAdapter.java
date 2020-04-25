@@ -39,8 +39,9 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
             @Override
             public void onClick(View view) {
 
-                TextView id_gs = (TextView) dialoggs.findViewById(R.id.id_gs);
+                TextView tentaikhoan_gs = (TextView) dialoggs.findViewById(R.id.tv_tentaikhoangs);
                 TextView hoten_gs = (TextView) dialoggs.findViewById(R.id.tv_hotengs);
+                TextView ngaysinh_gs = (TextView) dialoggs.findViewById(R.id.tv_ngaysinhgs);
                 TextView email_gs = (TextView) dialoggs.findViewById(R.id.tv_emailgs);
                 TextView sodienthoai_gs = (TextView) dialoggs.findViewById(R.id.tv_sdtgs);
                 TextView diachi_gs = (TextView) dialoggs.findViewById(R.id.tv_diachigs);
@@ -49,10 +50,9 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
                 TextView monday_gs = (TextView) dialoggs.findViewById(R.id.tv_mondaygs);
                 TextView trinhdo_gs = (TextView) dialoggs.findViewById(R.id.tv_trinhdogs);
 
-
-
-                id_gs.setText(lstGiasu.get(vHolder.getAdapterPosition()).getId_gs());
+                tentaikhoan_gs.setText(lstGiasu.get(vHolder.getAdapterPosition()).getTentaikhoan_gs());
                 hoten_gs.setText(lstGiasu.get(vHolder.getAdapterPosition()).getHoten_gs());
+                ngaysinh_gs.setText(lstGiasu.get(vHolder.getAdapterPosition()).getNgaysinh_gs());
                 email_gs.setText(lstGiasu.get(vHolder.getAdapterPosition()).getEmail_gs());
                 sodienthoai_gs.setText(lstGiasu.get(vHolder.getAdapterPosition()).getSodienthoai_gs());
                 diachi_gs.setText(lstGiasu.get(vHolder.getAdapterPosition()).getDiachi_gs());
@@ -70,8 +70,9 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
 
     @Override
     public void onBindViewHolder(@NonNull MyViewHolder holder, int position) {
-        holder.id_gs.setText(lstGiasu.get(position).getId_gs());
+        holder.tentaikhoan_gs.setText(lstGiasu.get(position).getTentaikhoan_gs());
         holder.hoten_gs.setText(lstGiasu.get(position).getHoten_gs());
+        holder.ngaysinh_gs.setText(lstGiasu.get(position).getNgaysinh_gs());
         holder.email_gs.setText(lstGiasu.get(position).getEmail_gs());
         holder.sodienthoai_gs.setText(lstGiasu.get(position).getSodienthoai_gs());
         holder.diachi_gs.setText(lstGiasu.get(position).getDiachi_gs());
@@ -90,12 +91,13 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
     public static class MyViewHolder extends RecyclerView.ViewHolder{
 
         private Button btn_xemchitiet;
-        private TextView id_gs, hoten_gs, email_gs, sodienthoai_gs, diachi_gs, truongtheohoc_gs, chuyennganhgs, monday_gs, trinhdo_gs;
+        private TextView tentaikhoan_gs,hoten_gs, ngaysinh_gs,email_gs, sodienthoai_gs, diachi_gs, truongtheohoc_gs, chuyennganhgs, monday_gs, trinhdo_gs;
 
         public MyViewHolder(@NonNull View itemView) {
             super(itemView);
-            id_gs = (TextView) itemView.findViewById( R.id.id_gs);
+            tentaikhoan_gs = (TextView) itemView.findViewById( R.id.tentaikhoan_gs );
             hoten_gs = (TextView) itemView.findViewById(R.id.tv_hotengs);
+            ngaysinh_gs = (TextView) itemView.findViewById(R.id.tv_ngaysinh);
             email_gs = (TextView) itemView.findViewById( R.id.tv_emailgs );
             sodienthoai_gs = (TextView) itemView.findViewById( R.id.tv_sdtgs );
             diachi_gs = (TextView) itemView.findViewById( R.id.tv_diachigs );

@@ -58,7 +58,7 @@ public class TrangchuFragment extends Fragment {
 
                 String tentaikhoan = mPreferences.getString( "Tentaikhoanhv","" );
 
-                String query = "select * from thongtinhocvien where Tentaikhoanhv = '"+tentaikhoan+"'";
+                String query = "select * from tthv where Tentaikhoanhv = '"+tentaikhoan+"'";
                 Statement st = connect.createStatement();
                 ResultSet rs = st.executeQuery(query);
                 if(rs.next()){

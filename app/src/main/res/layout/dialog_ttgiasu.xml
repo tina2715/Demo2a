@@ -19,56 +19,74 @@
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
                 <ImageView
-                    android:layout_marginTop="10dp"
                     android:layout_gravity="center"
-                    android:layout_width="100dp"
+                    android:layout_width="80dp"
                     android:layout_height="75dp"
                     app:srcCompat="@drawable/ic_person_black_24dp"
                     android:id="@+id/img_gs"/>
 
                 <LinearLayout
-                    android:weightSum="9"
+                    android:weightSum="10"
                     android:layout_marginLeft="30dp"
                     android:layout_marginRight="30dp"
-                    android:layout_marginTop="10dp"
+                    android:layout_marginTop="5dp"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="horizontal">
                     <TextView
-                        android:layout_weight="6"
+                        android:layout_weight="5"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:text="Thông tin gia sư:"
                         android:textSize="16sp"
                         android:textColor="@color/den"/>
                     <TextView
-                        android:layout_weight="3"
-                        android:id="@+id/id_gs"
+                        android:textSize="16sp"
+                        android:layout_weight="5"
+                        android:id="@+id/tv_tentaikhoangs"
                         android:textColor="@color/blue"
                         android:gravity="center"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:textStyle="bold"
-                        android:text="Mã GS"/>
+                        android:text="Tên tài khoản"/>
                 </LinearLayout>
-                <TextView
+                <LinearLayout
+                    android:weightSum="6"
                     android:layout_marginLeft="30dp"
                     android:layout_marginRight="30dp"
-                    android:layout_marginTop="15dp"
+                    android:layout_marginTop="5dp"
                     android:layout_width="match_parent"
-                    android:layout_height="40dp"
-                    android:background="@drawable/et_custom"
-                    android:text="Họ tên gia sư"
-                    android:drawableLeft="@drawable/ic_person_black_24dp"
-                    android:padding="10dp"
-                    android:drawablePadding="5dp"
-                    android:id="@+id/tv_hotengs"
-                    android:gravity="center_vertical"/>
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_weight="3"
+                        android:layout_width="0dp"
+                        android:layout_height="40dp"
+                        android:background="@drawable/et_custom"
+                        android:text="Họ tên gia sư"
+                        android:drawableLeft="@drawable/ic_person_black_24dp"
+                        android:padding="10dp"
+                        android:drawablePadding="5dp"
+                        android:id="@+id/tv_hotengs"/>
+                    <TextView
+                        android:gravity="center"
+                        android:layout_marginLeft="5dp"
+                        android:layout_width="0dp"
+                        android:layout_height="40dp"
+                        android:layout_weight="3"
+                        android:text="Ngày sinh"
+                        android:background="@drawable/et_custom"
+                        android:drawableLeft="@drawable/ic_cake_black_24dp"
+                        android:padding="10dp"
+                        android:drawablePadding="5dp"
+                        android:id="@+id/tv_ngaysinhgs"/>
+                </LinearLayout>
 
                 <TextView
                     android:layout_marginLeft="30dp"
                     android:layout_marginRight="30dp"
-                    android:layout_marginTop="10dp"
+                    android:layout_marginTop="5dp"
                     android:layout_width="match_parent"
                     android:layout_height="40dp"
                     android:background="@drawable/et_custom"
@@ -81,7 +99,7 @@
                 <TextView
                     android:layout_marginLeft="30dp"
                     android:layout_marginRight="30dp"
-                    android:layout_marginTop="10dp"
+                    android:layout_marginTop="5dp"
                     android:layout_width="match_parent"
                     android:layout_height="40dp"
                     android:background="@drawable/et_custom"
@@ -94,7 +112,7 @@
                 <TextView
                     android:layout_marginLeft="30dp"
                     android:layout_marginRight="30dp"
-                    android:layout_marginTop="10dp"
+                    android:layout_marginTop="5dp"
                     android:layout_width="match_parent"
                     android:layout_height="40dp"
                     android:background="@drawable/et_custom"
@@ -107,7 +125,7 @@
                 <TextView
                     android:layout_marginLeft="30dp"
                     android:layout_marginRight="30dp"
-                    android:layout_marginTop="10dp"
+                    android:layout_marginTop="5dp"
                     android:layout_width="match_parent"
                     android:layout_height="40dp"
                     android:background="@drawable/et_custom"
@@ -120,7 +138,7 @@
                 <TextView
                     android:layout_marginLeft="30dp"
                     android:layout_marginRight="30dp"
-                    android:layout_marginTop="10dp"
+                    android:layout_marginTop="5dp"
                     android:layout_width="match_parent"
                     android:layout_height="40dp"
                     android:background="@drawable/et_custom"
@@ -133,7 +151,7 @@
                 <TextView
                     android:layout_marginLeft="30dp"
                     android:layout_marginRight="30dp"
-                    android:layout_marginTop="10dp"
+                    android:layout_marginTop="5dp"
                     android:layout_width="match_parent"
                     android:layout_height="40dp"
                     android:background="@drawable/et_custom"
@@ -146,7 +164,7 @@
                 <TextView
                     android:layout_marginLeft="30dp"
                     android:layout_marginRight="30dp"
-                    android:layout_marginTop="10dp"
+                    android:layout_marginTop="5dp"
                     android:layout_width="match_parent"
                     android:layout_height="40dp"
                     android:background="@drawable/et_custom"

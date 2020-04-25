@@ -20,182 +20,260 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Tên lớp"
-                android:textSize="16dp"
-                android:fontFamily="@font/ebgaramond"
-                android:textStyle="bold"
-                android:layout_marginLeft="30dp"
-                android:layout_marginRight="30dp"
-                android:textColor="@color/white"
-                android:layout_marginTop="5dp"/>
-            <EditText
-                android:padding="5dp"
-                android:id="@+id/edt_tenlop"
-                android:layout_width="match_parent"
-                android:layout_height="50dp"
-                android:background="@drawable/et_custom"
-                android:hint=""
-                android:layout_marginLeft="30dp"
-                android:layout_marginRight="30dp"/>
-<!--        <LinearLayout-->
-<!--            android:layout_marginLeft="30dp"-->
-<!--            android:layout_marginRight="30dp"-->
-<!--            android:layout_marginTop="5dp"-->
-<!--            android:layout_width="match_parent"-->
-<!--            android:layout_height="40dp"-->
-<!--            android:orientation="vertical"-->
-<!--            android:background="@drawable/et_custom">-->
-<!--            <Spinner-->
-<!--                android:padding="10dp"-->
-<!--                android:gravity="left"-->
-<!--                android:layout_alignParentTop="true"-->
-<!--                android:layout_centerHorizontal="true"-->
-<!--                android:id="@+id/spin_lophoc"-->
-<!--                android:layout_width="match_parent"-->
-<!--                android:layout_height="40dp"/>-->
-<!--        </LinearLayout>-->
-            <TextView
-                android:fontFamily="@font/ebgaramond"
                 android:layout_marginLeft="30dp"
                 android:layout_marginRight="30dp"
                 android:layout_marginTop="10dp"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Tên môn:"
+                android:text="Tên tài khoản"
                 android:textColor="@color/white"
-                android:textSize="16dp"
-                android:textStyle="bold"/>
-            <EditText
-                android:padding="5dp"
-                android:id="@+id/edt_tenmon"
-                android:layout_width="match_parent"
-                android:layout_height="50dp"
-                android:background="@drawable/et_custom"
-                android:hint=""
-                android:layout_marginLeft="30dp"
-                android:layout_marginRight="30dp"/>
-
-            <TextView
                 android:fontFamily="@font/ebgaramond"
-                android:layout_marginLeft="30dp"
-                android:layout_marginRight="30dp"
-                android:textColor="@color/white"
-                android:layout_marginTop="10dp"
-                android:text="Ngày bắt đầu:"
-                android:textSize="16dp"
-                android:textStyle="bold"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"/>
-            <EditText
-                android:id="@+id/edt_ngaybatdau"
-                android:layout_width="match_parent"
-                android:layout_height="40dp"
-                android:background="@drawable/et_custom"
-                android:layout_marginLeft="30dp"
-                android:layout_marginRight="30dp"
-                android:padding="5dp"/>
+                android:drawableLeft="@drawable/ic_person_black_24dp"
+                android:drawablePadding="5dp"
+                />
             <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Số lượng giờ học:"
-                android:layout_marginLeft="30dp"
-                android:layout_marginRight="30dp"
-                android:layout_marginTop="10dp"
-                android:textColor="@color/white"
-                android:textSize="16sp"/>
-            <EditText
-                android:padding="5dp"
-                android:id="@+id/edt_soluonggiohoc"
-                android:layout_width="match_parent"
-                android:layout_height="50dp"
-                android:background="@drawable/et_custom"
-                android:hint=""
-                android:layout_marginLeft="30dp"
-                android:layout_marginRight="30dp"/>
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="50dp"
-                android:layout_marginLeft="30dp"
-                android:layout_marginRight="30dp"
-                android:layout_marginTop="10dp"
-                android:orientation="horizontal">
-
-                <TextView
-                    android:layout_width="150dp"
-                    android:layout_height="61dp"
-                    android:gravity="center_vertical"
-                    android:text="Số buổi trong tuần:"
-                    android:textColor="@color/white"
-                    android:textSize="16sp" />
-                <EditText
-                    android:padding="5dp"
-                    android:id="@+id/edt_soluongbuoihoc"
-                    android:layout_width="match_parent"
-                    android:layout_height="50dp"
-                    android:background="@drawable/et_custom"
-                    android:hint=""/>
-            </LinearLayout>
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Ngày học:"
-                android:textSize="16sp"
-                android:textColor="@color/white"
-                android:layout_marginLeft="30dp"
-                android:layout_marginRight="30dp"
-                android:layout_marginTop="10dp"/>
-            <EditText
-                android:padding="5dp"
-                android:id="@+id/edt_ngayhoc"
-                android:layout_width="match_parent"
-                android:layout_height="50dp"
-                android:background="@drawable/et_custom"
-                android:hint=""
-                android:layout_marginLeft="30dp"
-                android:layout_marginRight="30dp"/>
-            <TextView
-                android:fontFamily="@font/ebgaramond"
-                android:layout_marginLeft="30dp"
-                android:layout_marginRight="30dp"
-                android:layout_marginTop="10dp"
-                android:textColor="@color/white"
-                android:textStyle="bold"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Giờ học:"
-                android:textSize="16dp"/>
-            <EditText
-                android:padding="5dp"
-                android:id="@+id/edt_giohoc"
-                android:layout_width="match_parent"
-                android:layout_height="50dp"
-                android:background="@drawable/et_custom"
-                android:hint=""
-                android:layout_marginLeft="30dp"
-                android:layout_marginRight="30dp"/>
-            <TextView
-                android:fontFamily="@font/ebgaramond"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Mô tả yêu cầu:"
-                android:textSize="16dp"
-                android:layout_marginRight="30dp"
-                android:textColor="@color/white"
-                android:textStyle="bold"
-                android:layout_marginLeft="30dp"
-                android:layout_marginTop="10dp"/>
-            <EditText
-                android:gravity="start"
-                android:id="@+id/edt_mtyeucau"
-                android:background="@drawable/et_custom"
                 android:padding="10dp"
+                android:id="@+id/tv_tentaikhoan"
                 android:layout_width="match_parent"
-                android:layout_height="90dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/et_custom"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="10dp"
+                android:text="Tên cấp học"
+                android:textColor="@color/white"
+                android:fontFamily="@font/ebgaramond"
+                android:drawableLeft="@drawable/ic_class_black_24dp"
+                android:drawablePadding="5dp"
+                />
+            <LinearLayout
                 android:layout_marginLeft="30dp"
                 android:layout_marginRight="30dp"
                 android:layout_marginTop="5dp"
-                android:hint="Mô tả yêu cầu"/>
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:orientation="vertical"
+                android:background="@drawable/et_custom">
+                <Spinner
+                    android:padding="10dp"
+                    android:gravity="left"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:id="@+id/spin_caphoc"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"/>
+            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="10dp"
+                android:text="Tên môn"
+                android:textColor="@color/white"
+                android:fontFamily="@font/ebgaramond"
+                android:drawableLeft="@drawable/ic_library_books_black_24dp"
+                android:drawablePadding="5dp"
+                />
+            <LinearLayout
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:orientation="vertical"
+                android:background="@drawable/et_custom">
+                <Spinner
+                    android:padding="10dp"
+                    android:gravity="left"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:id="@+id/spin_tenmon"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"/>
+            </LinearLayout>
+            <TextView
+                android:drawableLeft="@drawable/ic_place_black_24dp"
+                android:drawablePadding="5dp"
+                android:fontFamily="@font/ebgaramond"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:textColor="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Địa điểm học:"
+                android:textStyle="bold"
+                android:textSize="16dp"/>
+            <EditText
+                android:padding="10dp"
+                android:id="@+id/edt_diadiemhoc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/et_custom"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"/>
+            <TextView
+                android:drawableLeft="@drawable/ic_today_black_24dp"
+                android:drawablePadding="5dp"
+                android:fontFamily="@font/ebgaramond"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:textColor="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Ngày dự kiến học:"
+                android:textStyle="bold"
+                android:textSize="16dp"/>
+            <EditText
+                android:inputType="date"
+                android:padding="10dp"
+                android:id="@+id/edt_ngaydukienhoc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/et_custom"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="10dp"
+                android:text="Số lượng giờ học"
+                android:textColor="@color/white"
+                android:fontFamily="@font/ebgaramond"
+                android:drawableLeft="@drawable/ic_timer_black_24dp"
+                android:drawablePadding="5dp"
+                />
+            <LinearLayout
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:orientation="vertical"
+                android:background="@drawable/et_custom">
+                <Spinner
+                    android:padding="10dp"
+                    android:gravity="left"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:id="@+id/spin_soluonggiohoc"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"/>
+            </LinearLayout>
+            <TextView
+                android:drawableLeft="@drawable/ic_today_black_24dp"
+                android:drawablePadding="5dp"
+                android:fontFamily="@font/ebgaramond"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:textColor="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Ngày học trong tuần:"
+                android:textStyle="bold"
+                android:textSize="16dp"/>
+            <EditText
+                android:padding="10dp"
+                android:id="@+id/edt_ngayhoctrongtuan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/et_custom"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="10dp"
+                android:text="Giờ bắt đầu học"
+                android:textColor="@color/white"
+                android:fontFamily="@font/ebgaramond"
+                android:drawableLeft="@drawable/ic_access_time_black_24dp"
+                android:drawablePadding="5dp"
+                />
+            <LinearLayout
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:orientation="vertical"
+                android:background="@drawable/et_custom">
+                <Spinner
+                    android:padding="10dp"
+                    android:gravity="left"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:id="@+id/spin_giobatdauhoc"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"/>
+            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="10dp"
+                android:text="Trình độ gia sư"
+                android:textColor="@color/white"
+                android:fontFamily="@font/ebgaramond"
+                android:drawableLeft="@drawable/ic_school_black_24dp"
+                android:drawablePadding="5dp"
+                />
+            <LinearLayout
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:orientation="vertical"
+                android:background="@drawable/et_custom">
+                <Spinner
+                    android:padding="10dp"
+                    android:gravity="left"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:id="@+id/spin_trinhdogiasu"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"/>
+            </LinearLayout>
+            <TextView
+                android:drawableLeft="@drawable/ic_library_books_black_24dp"
+                android:drawablePadding="5dp"
+                android:fontFamily="@font/ebgaramond"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:textColor="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Mô tả:"
+                android:textStyle="bold"
+                android:textSize="16dp"/>
+            <EditText
+                android:hint="Nhập mô tả"
+                android:gravity="start"
+                android:padding="10dp"
+                android:id="@+id/edt_motayeucau"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:background="@drawable/et_custom"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"/>
             <Button
                 android:id="@+id/btn_xacnhan"
                 android:layout_marginTop="20dp"
