@@ -21,7 +21,7 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
     public List<Giasu> lstGiasu;
     Dialog myDialog;
 
-    public RecyclerViewAdapter( List<Giasu> lstGiasu) {
+    public RecyclerViewAdapter(List<Giasu> lstGiasu) {
         this.lstGiasu = lstGiasu;
     }
 

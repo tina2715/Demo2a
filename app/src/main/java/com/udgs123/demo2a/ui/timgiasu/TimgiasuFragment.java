@@ -35,7 +35,7 @@ import java.util.Calendar;
 public class TimgiasuFragment extends Fragment {
     View v;
     Connection connect;
-    EditText diadiemhoc, ngayhoctrongtuan, motayeucau;
+    EditText diadiemhoc, ngayhoctrongtuan, motayeucau, hocphi;
     TextView tvTentaikhoan;
     Button btnXacnhan;
 
@@ -80,6 +80,7 @@ public class TimgiasuFragment extends Fragment {
         giobatdauSpin = (Spinner) v.findViewById( R.id.spin_giobatdauhoc );
         trinhdoSpin = (Spinner) v.findViewById( R.id.spin_trinhdogiasu );
         motayeucau = (EditText) v.findViewById( R.id.edt_motayeucau );
+        hocphi = (EditText) v.findViewById( R.id.edt_hocphi );
         btnXacnhan = (Button) v.findViewById(R.id.btn_xacnhan);
         SelectedCaplopItem();
         SelectedMonhocItem();
@@ -301,8 +302,9 @@ public class TimgiasuFragment extends Fragment {
                         String giobatdauID = GiobatdauID.toString();
                         String trinhdoID = TrinhdoID.toString();
                         String motayeuCau = motayeucau.getText().toString().trim();
-                        String query = "insert into Quanlylop(Tentaikhoanhv, Caplop, Tenmonhoc, Diadiem, Ngaydukien, Soluonggio, Ngayhoctrongtuan, Giobatdau,Loaitrinhdo, Mota) values\n" +
-                                "('"+tvTentaikhoan+"','"+caplopID+"','"+monhocID+"','"+diadiemHoc+"','"+ngaydukienHoc+"','"+soluonggioID+"','"+ngayHoctrongtuan+"','"+giobatdauID+"','"+trinhdoID+"','"+motayeuCau+"')";
+                        String hocphiyeucau = hocphi.getText().toString().trim();
+                        String query = "insert into Quanlylop(Tentaikhoanhv, Caplop, Tenmonhoc, Diadiem, Ngaydukien, Soluonggio, Ngayhoctrongtuan, Giobatdau,Loaitrinhdo, Mota, Hocphi) values\n" +
+                                "('"+tvTentaikhoan+"','"+caplopID+"','"+monhocID+"','"+diadiemHoc+"','"+ngaydukienHoc+"','"+soluonggioID+"','"+ngayHoctrongtuan+"','"+giobatdauID+"','"+trinhdoID+"','"+motayeuCau+"','"+hocphiyeucau+"')";
                         PreparedStatement pst = connect.prepareStatement(query);
                         pst.executeUpdate();
                         Toast.makeText(getActivity(),"Đăng ký thành công",Toast.LENGTH_SHORT).show();
