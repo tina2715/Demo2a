@@ -49,7 +49,7 @@ public class DsgiasuFragment extends Fragment {
                 Toast.makeText(getActivity(), "Lỗi kết nối",Toast.LENGTH_SHORT).show();
             } else {
                 Statement st = connect.createStatement();
-                ResultSet rs = st.executeQuery("Select * from ttgs");
+                ResultSet rs = st.executeQuery("Select * from ttgs where Trangthainguoidung=2");
                 while (rs.next()) {
                     giasus.add( new Giasu(
                             rs.getString("Tentaikhoangs"),
@@ -61,7 +61,8 @@ public class DsgiasuFragment extends Fragment {
                             rs.getString("Truongtheohoc"),
                             rs.getString("Chuyennganh"),
                             rs.getString("Tenmongs"),
-                            rs.getString("Tentrinhdo")
+                            rs.getString("Tentrinhdo"),
+                            rs.getString("Trangthainguoidung")
                     ) );
                 }
             }

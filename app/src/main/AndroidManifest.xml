@@ -14,7 +14,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Tttk_Update"></activity>
+        <activity android:name=".Chitiet_lophoc"/>
+        <activity android:name=".Tttk_Update"/>
         <activity android:name=".doimatkhau" />
         <activity
             android:name=".ManHinhDauTien"

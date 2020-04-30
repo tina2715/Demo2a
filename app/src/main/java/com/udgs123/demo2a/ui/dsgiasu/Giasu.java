@@ -2,10 +2,10 @@ package com.udgs123.demo2a.ui.dsgiasu;
 
 public class Giasu {
     private String  Tentaikhoan_gs, Hoten_gs, Ngaysinh_gs, Email_gs, Sodienthoai_gs, Diachi_gs, Truongtheohoc_gs,
-            Chuyennganh_gs, Monday_gs, Trinhdo_gs;
+            Chuyennganh_gs, Monday_gs, Trinhdo_gs, Trangthainguoidung_gs;
 
     public Giasu( String tentaikhoan_gs,String hoten_gs,  String ngaysinh_gs, String email_gs, String sodienthoai_gs, String diachi_gs,
-                    String truongtheohoc_gs, String chuyennganh_gs, String monday_gs, String trinhdo_gs) {
+                    String truongtheohoc_gs, String chuyennganh_gs, String monday_gs, String trinhdo_gs,String trangthainguoidung_gs) {
         Tentaikhoan_gs = tentaikhoan_gs;
         Hoten_gs = hoten_gs;
         Ngaysinh_gs = ngaysinh_gs;
@@ -16,6 +16,15 @@ public class Giasu {
         Chuyennganh_gs = chuyennganh_gs;
         Monday_gs = monday_gs;
         Trinhdo_gs = trinhdo_gs;
+        Trangthainguoidung_gs = trangthainguoidung_gs;
+    }
+
+    public String getTrangthainguoidung_gs() {
+        return Trangthainguoidung_gs;
+    }
+
+    public void setTrangthainguoidung_gs(String trangthainguoidung_gs) {
+        Trangthainguoidung_gs = trangthainguoidung_gs;
     }
 
     public String getTentaikhoan_gs() {

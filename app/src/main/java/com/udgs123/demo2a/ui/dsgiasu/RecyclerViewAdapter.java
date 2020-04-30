@@ -49,6 +49,7 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
                 TextView chuyennganh_gs = (TextView) dialoggs.findViewById(R.id.tv_chuyennganhgs);
                 TextView monday_gs = (TextView) dialoggs.findViewById(R.id.tv_mondaygs);
                 TextView trinhdo_gs = (TextView) dialoggs.findViewById(R.id.tv_trinhdogs);
+                TextView trangthainguoidung_gs = (TextView) dialoggs.findViewById(R.id.tv_trangthainguoidung_dialog);
 
                 tentaikhoan_gs.setText(lstGiasu.get(vHolder.getAdapterPosition()).getTentaikhoan_gs());
                 hoten_gs.setText(lstGiasu.get(vHolder.getAdapterPosition()).getHoten_gs());
@@ -60,6 +61,7 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
                 chuyennganh_gs.setText(lstGiasu.get(vHolder.getAdapterPosition()).getChuyennganh_gs());
                 monday_gs.setText(lstGiasu.get(vHolder.getAdapterPosition()).getMonday_gs());
                 trinhdo_gs.setText(lstGiasu.get(vHolder.getAdapterPosition()).getTrinhdo_gs());
+                trangthainguoidung_gs.setText(lstGiasu.get(vHolder.getAdapterPosition()).getTrangthainguoidung_gs());
                 dialoggs.show();
 
             }
@@ -80,6 +82,7 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
         holder.chuyennganhgs.setText(lstGiasu.get(position).getChuyennganh_gs());
         holder.monday_gs.setText(lstGiasu.get(position).getMonday_gs());
         holder.trinhdo_gs.setText(lstGiasu.get( position ).getTrinhdo_gs());
+        holder.trangthainguoidung_gs.setText(lstGiasu.get(position).getTrangthainguoidung_gs());
 
     }
 
@@ -91,7 +94,7 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
     public static class MyViewHolder extends RecyclerView.ViewHolder{
 
         private Button btn_xemchitiet;
-        private TextView tentaikhoan_gs,hoten_gs, ngaysinh_gs,email_gs, sodienthoai_gs, diachi_gs, truongtheohoc_gs, chuyennganhgs, monday_gs, trinhdo_gs;
+        private TextView tentaikhoan_gs,hoten_gs, ngaysinh_gs,email_gs, sodienthoai_gs, diachi_gs, truongtheohoc_gs, chuyennganhgs, monday_gs, trinhdo_gs, trangthainguoidung_gs;
 
         public MyViewHolder(@NonNull View itemView) {
             super(itemView);
@@ -105,6 +108,7 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
             chuyennganhgs = (TextView) itemView.findViewById( R.id.tv_chuyennganhgs );
             monday_gs = (TextView) itemView.findViewById( R.id.tv_mondaygs );
             trinhdo_gs = (TextView) itemView.findViewById( R.id.tv_trinhdogs );
+            trangthainguoidung_gs = (TextView) itemView.findViewById( R.id.tv_trangthainguoidung_item );
             btn_xemchitiet = (Button) itemView.findViewById(R.id.btn_xemchitiet);
 
         }

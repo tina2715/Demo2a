@@ -1,61 +1,143 @@
 package com.udgs123.demo2a.ui.ttlophoc;
 
 public class Ttlophoc {
+    String Malophoc, Tentaikhoanhv, Caplop, Tenmonhoc, Diadiem, Ngaydukien, Soluonggio, Ngayhoctrongtuan, Giobatdau, Loaitrinhdo, Mota, Ngaytao, Trangthailop, Tentaikhoangs, Hocphi;
 
-    private String Tenlop;
-    private String Motayeucau;
-    private String Monhoc;
-    private String Diachi;
-    private String Hocphi;
-    private String Trinhdogiasu;
-    private String Thoigianhoc;
-
-    public Ttlophoc() {
-
-    }
-
-    public Ttlophoc(String tenlop, String motayeucau, String monhoc, String diachi, String hocphi, String trinhdogiasu, String thoigianhoc) {
-        Tenlop = tenlop;
-        Motayeucau = motayeucau;
-        Monhoc = monhoc;
-        Diachi = diachi;
+    public Ttlophoc(String malophoc, String tentaikhoanhv, String caplop, String tenmonhoc, String diadiem, String ngaydukien, String soluonggio, String ngayhoctrongtuan, String giobatdau, String loaitrinhdo, String mota, String ngaytao, String trangthailop, String tentaikhoangs, String hocphi) {
+        Malophoc = malophoc;
+        Tentaikhoanhv = tentaikhoanhv;
+        Caplop = caplop;
+        Tenmonhoc = tenmonhoc;
+        Diadiem = diadiem;
+        Ngaydukien = ngaydukien;
+        Soluonggio = soluonggio;
+        Ngayhoctrongtuan = ngayhoctrongtuan;
+        Giobatdau = giobatdau;
+        Loaitrinhdo = loaitrinhdo;
+        Mota = mota;
+        Ngaytao = ngaytao;
+        Trangthailop = trangthailop;
+        Tentaikhoangs = tentaikhoangs;
         Hocphi = hocphi;
-        Trinhdogiasu = trinhdogiasu;
-        Thoigianhoc = thoigianhoc;
     }
 
-    //getter
-
-
-    public String getTenlop() {
-        return Tenlop;
+    public String getMalophoc() {
+        return Malophoc;
     }
-    public String getMotayeucau() {
-        return Motayeucau;
+
+    public void setMalophoc(String malophoc) {
+        Malophoc = malophoc;
     }
-    public String getMonhoc () { return Monhoc; }
-    public String getDiachi () { return Diachi; }
-    public String getHocphi () { return Hocphi; }
-    public String getTrinhdogiasu() {return Trinhdogiasu; }
-    public String getThoigianhoc() {return Thoigianhoc; }
 
-
-    //setter
-
-
-    public void setTenlop(String tenlop) {
-        Tenlop = tenlop;
+    public String getTentaikhoanhv() {
+        return Tentaikhoanhv;
     }
-    public void setMotayeucau(String motayeucau) {
-        Motayeucau = motayeucau;
-    }
-    public void setMonhoc(String monhoc) { Monhoc = monhoc;}
-    public void setDiachi(String diachi) {
-        Diachi = diachi;
-    }
-    public void setHocphi (String hocphi) {Hocphi = hocphi;}
-    public void setTrinhdogiasu(String trinhdogiasu) {Trinhdogiasu = trinhdogiasu;}
-    public void setThoigianhoc(String thoigianhoc) {Thoigianhoc = thoigianhoc;}
 
+    public void setTentaikhoanhv(String tentaikhoanhv) {
+        Tentaikhoanhv = tentaikhoanhv;
+    }
 
+    public String getCaplop() {
+        return Caplop;
+    }
+
+    public void setCaplop(String caplop) {
+        Caplop = caplop;
+    }
+
+    public String getTenmonhoc() {
+        return Tenmonhoc;
+    }
+
+    public void setTenmonhoc(String tenmonhoc) {
+        Tenmonhoc = tenmonhoc;
+    }
+
+    public String getDiadiem() {
+        return Diadiem;
+    }
+
+    public void setDiadiem(String diadiem) {
+        Diadiem = diadiem;
+    }
+
+    public String getNgaydukien() {
+        return Ngaydukien;
+    }
+
+    public void setNgaydukien(String ngaydukien) {
+        Ngaydukien = ngaydukien;
+    }
+
+    public String getSoluonggio() {
+        return Soluonggio;
+    }
+
+    public void setSoluonggio(String soluonggio) {
+        Soluonggio = soluonggio;
+    }
+
+    public String getNgayhoctrongtuan() {
+        return Ngayhoctrongtuan;
+    }
+
+    public void setNgayhoctrongtuan(String ngayhoctrongtuan) {
+        Ngayhoctrongtuan = ngayhoctrongtuan;
+    }
+
+    public String getGiobatdau() {
+        return Giobatdau;
+    }
+
+    public void setGiobatdau(String giobatdau) {
+        Giobatdau = giobatdau;
+    }
+
+    public String getLoaitrinhdo() {
+        return Loaitrinhdo;
+    }
+
+    public void setLoaitrinhdo(String loaitrinhdo) {
+        Loaitrinhdo = loaitrinhdo;
+    }
+
+    public String getMota() {
+        return Mota;
+    }
+
+    public void setMota(String mota) {
+        Mota = mota;
+    }
+
+    public String getNgaytao() {
+        return Ngaytao;
+    }
+
+    public void setNgaytao(String ngaytao) {
+        Ngaytao = ngaytao;
+    }
+
+    public String getTrangthailop() {
+        return Trangthailop;
+    }
+
+    public void setTrangthailop(String trangthailop) {
+        Trangthailop = trangthailop;
+    }
+
+    public String getTentaikhoangs() {
+        return Tentaikhoangs;
+    }
+
+    public void setTentaikhoangs(String tentaikhoangs) {
+        Tentaikhoangs = tentaikhoangs;
+    }
+
+    public String getHocphi() {
+        return Hocphi;
+    }
+
+    public void setHocphi(String hocphi) {
+        Hocphi = hocphi;
+    }
 }

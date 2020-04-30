@@ -174,6 +174,10 @@
                     android:drawablePadding="5dp"
                     android:id="@+id/tv_trinhdogs"
                     android:gravity="center_vertical"/>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:id="@+id/tv_trangthainguoidung_dialog"/>
 
             </LinearLayout>
         </LinearLayout>

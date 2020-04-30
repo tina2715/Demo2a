@@ -1,110 +1,143 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@+id/ttlophoc_item_id"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="horizontal"
     android:layout_width="match_parent"
-    android:layout_marginTop="5dp"
-    android:background="@drawable/nen_sang"
-    android:padding="10dp"
     android:layout_height="wrap_content"
-    android:weightSum="10">
-    <LinearLayout
-        android:layout_weight="8"
-        android:layout_marginLeft="15dp"
-        android:layout_marginRight="15dp"
-        android:orientation="vertical"
-        android:layout_width="220dp"
-        android:layout_height="wrap_content">
-        <TextView
-            android:fontFamily="@font/dancing"
-            android:textColor="@color/orange"
-            android:text="Tên lớp"
-            android:textSize="24dp"
-            android:textStyle="bold"
-            android:id="@+id/ten_ttlophoc"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"/>
+    android:layout_marginTop="5dp"
+    android:background="@color/white"
+    android:paddingTop="5dp"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/nen_sang">
         <LinearLayout
+            android:weightSum="10"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal">
-            <TextView
-                android:fontFamily="@font/ebgaramond"
-                android:layout_width="80dp"
+            <LinearLayout
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:text="Môn học:"
-                android:textSize="18dp"/>
-            <TextView
-                android:text="Môn học"
-                android:fontFamily="@font/ebgaramond"
-                android:textSize="18dp"
-                android:layout_gravity="start"
-                android:id="@+id/monhoc_ttlophoc"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"/>
-        </LinearLayout>
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
-            <TextView
-                android:fontFamily="@font/ebgaramond"
-                android:layout_width="80dp"
+                android:layout_weight="8"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tên lớp"
+                    android:textStyle="bold"
+                    android:textColor="@color/orange"
+                    android:fontFamily="@font/dancing"
+                    android:textSize="24sp"
+                    android:id="@+id/tv_caplop_item"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="6"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="10dp">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3"
+                        android:text="Tên môn học"
+                        android:textStyle="bold"
+                        android:textSize="16sp"
+                        android:textColor="@color/blue"/>
+                    <TextView
+                        android:layout_weight="3"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="Tên môn học"
+                        android:textColor="@color/blue"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:id="@+id/tv_tenmonhoc_item"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="5">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/ebgaramond"
+                        android:textSize="16sp"
+                        android:text="Mã số lớp"
+                        android:textStyle="bold"
+                        android:layout_weight="2"
+                        android:textColor="@color/green"/>
+                    <TextView
+                        android:layout_weight="3"
+                        android:fontFamily="@font/ebgaramond"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="Mã lớp"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/green"
+                        android:id="@+id/tv_malophoc_item"/>
+                </LinearLayout>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:id="@+id/tv_tentaikhoanhv_item"/>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:id="@+id/tv_diadiem_item"/>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:id="@+id/tv_ngaydukien_item"/>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:id="@+id/tv_soluonggio_item"/>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:id="@+id/tv_ngayhoctrongtuan_item"/>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:id="@+id/tv_giobatdau_item"/>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:id="@+id/tv_loaitrinhdo_item"/>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:id="@+id/tv_mota_item"/>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:id="@+id/tv_ngaytao_item"/>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:id="@+id/tv_trangthailop_item"/>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:id="@+id/tv_tentaikhoangs_item"/>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:id="@+id/tv_hocphi_item"/>
+            </LinearLayout>
+            <Button
+                android:layout_weight="2"
+                android:layout_gravity="center_vertical"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:text="Địa chỉ:"
-                android:textSize="18dp"/>
-            <TextView
-                android:text="Địa chỉ"
-                android:fontFamily="@font/ebgaramond"
-                android:textSize="18dp"
-                android:id="@+id/diachi_ttlophoc"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"/>
+                android:background="@drawable/ic_chevron_right_black_24dp"
+                android:id="@+id/btn_xemchitiet_ttlophoc"/>
         </LinearLayout>
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
-            <TextView
-                android:textColor="@color/blue"
-                android:layout_marginRight="10dp"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Học phí:"
-                android:textSize="18dp"/>
-            <TextView
-                android:text="Học phí"
-                android:textColor="@color/blue"
-                android:textSize="18dp"
-                android:layout_gravity="start"
-                android:id="@+id/hocphi_ttlophoc"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"/>
-        </LinearLayout>
-        <TextView
-            android:layout_width="0dp"
-            android:layout_height="0dp"
-            android:text="Trình độ gia sư"
-            android:id="@+id/trinhdogiasu_ttlophoc"
-            android:textStyle="bold"/>
-        <TextView
-            android:layout_width="0dp"
-            android:layout_height="0dp"
-            android:text="Thời gian học"
-            android:id="@+id/thoigianhoc_ttlophoc"
-            android:textStyle="bold"/>
-        <TextView
-            android:layout_width="0dp"
-            android:layout_height="0dp"
-            android:text="Mô tả yêu cầu"
-            android:id="@+id/motayeucau_ttlophoc"
-            android:textStyle="bold"/>
-    </LinearLayout>
-    <Button
-        android:layout_weight="2"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:id="@+id/btn_xemchitiet"
-        android:background="@drawable/ic_arrow_right"
-        android:layout_gravity="center_vertical"/>
+    </RelativeLayout>
+
 </LinearLayout>

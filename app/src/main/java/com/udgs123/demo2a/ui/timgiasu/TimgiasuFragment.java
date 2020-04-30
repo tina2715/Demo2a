@@ -290,7 +290,7 @@ public class TimgiasuFragment extends Fragment {
                 } else {
                     try {
                         SharedPreferences mPreferences = PreferenceManager.getDefaultSharedPreferences(getActivity());
-                        SharedPreferences.Editor editor = mPreferences.edit();
+                        mPreferences.edit();
 
                         String tvTentaikhoan =mPreferences.getString("Tentaikhoanhv","");
                         String caplopID = CaplopID.toString();
